@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-5xl mt-10">StopWatch</h1>
+
+    <!-- clock container -->
+    <!-- <div class="flex justify-center mt-14">
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <span class="countdown font-mono text-5xl">
+                    <span id="hours">00</span>
+                </span>
+                hours
+            </div>
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <span class="countdown font-mono text-5xl">
+                    <span id="minutes">00</span>
+                </span>
+                min
+            </div>
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <span class="countdown font-mono text-5xl">
+                    
+                </span>
+                sec
+            </div>
+        </div>
+    </div> -->
+
+    <div class="rounded-box">
+        <p class="text-5xl text-center mt-14">
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+        </p>
+        <p class="text-xl text-center mt-6">
+            <span>hours</span> :
+            <span>minutes</span> :  
+            <span>seconds</span>
+        </p>
+    </div>
+
+    <!-- btn container -->
+    <div class="flex justify-center gap-2 mt-6">
+        <button onclick="startTime()" class="btn btn-info">Start</button>
+        <button onclick="pauseTime()" class="btn btn-success">Pause</button>
+        <button onclick="resetTime()" class="btn btn-info">Reset</button>
+    </div>
+
+    <script src="./stopwatch.js"></script>
+</body>
+
+</html>
